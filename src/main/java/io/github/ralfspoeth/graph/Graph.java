@@ -1,4 +1,4 @@
-package io.github.ralfspoeth.basix.graph;
+package io.github.ralfspoeth.graph;
 
 import java.util.Collection;
 import java.util.Set;

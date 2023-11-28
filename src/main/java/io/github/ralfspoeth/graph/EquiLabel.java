@@ -1,4 +1,4 @@
-package io.github.ralfspoeth.basix.graph;
+package io.github.ralfspoeth.graph;
 
 public record EquiLabel<T>(T label) implements Comparable<EquiLabel<? super T>> {
 
