@@ -28,12 +28,12 @@ public class ImmutableGraph<T, L extends Comparable<? super L>> extends Abstract
 
     public static <T, L extends Comparable<? super L>> ImmutableGraph<T, L> usingLabelMap(Collection<T> elements, Function<T, Map<L, T>> successors) {
         List<Edge<T, L>> edges = new ArrayList<>();
-        elements.forEach(e ->
+        /*elements.forEach(e ->
                 successors.apply(e).entrySet()
                         .stream()
                         .map(se -> new Edge(e, se.getValue(), se.getKey()))
                         .forEach(edges::add)
-        );
+        );*/
         return new ImmutableGraph<>(elements, edges);
     }
 
